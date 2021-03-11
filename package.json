@@ -1,10 +1,10 @@
 {
-  "name": "ejs-challenge",
+  "name": "ls",
   "version": "1.0.0",
-  "description": "",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js"
   },
   "author": "",
   "license": "ISC",
@@ -12,7 +12,21 @@
     "body-parser": "^1.18.3",
     "ejs": "^2.6.1",
     "express": "^4.16.3",
+    "heroku": "^7.2.0",
     "lodash": "^4.17.11",
     "mongoose": "^5.11.19"
-  }
+  },
+  "engines": {
+    "node": "12.19.0"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ladiajy2g/simpleblog.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ladiajy2g/simpleblog/issues"
+  },
+  "homepage": "https://github.com/ladiajy2g/simpleblog#readme",
+  "description": ""
 }
