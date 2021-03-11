@@ -27,10 +27,10 @@ const postsSchema = {
 const Post = mongoose.model("Post", postsSchema);
 
 // initial sample post for the mongoose database
-const post1 = new Post({
-  title: 'My first Post',
-  content: 'Lacus vel facilisis tor nectuorci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mattis molestie a iaculis at erat pellentesque adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris'
-});
+// const post1 = new Post({
+//   title: 'My first Post',
+//   content: 'Lacus vel facilisis tor nectuorci porta. Donec ultrices tincidunt arcu non sodales neque sodales ut. Mattis molestie a iaculis at erat pellentesque adipiscing. Magnis dis parturient montes nascetur ridiculus mus mauris'
+// });
 
 app.get("/", function(req, res){
   
@@ -70,17 +70,12 @@ app.post("/compose", function(req, res){
 app.get('/:postId', (req, res) => {
   const requestedId = req.params.postId;
   Post.findOne({_id: requestedId}, (err, post) => {
-    if(err){
-      res.render('post', {
-        title: 'Not found',
-        content: ''
-      })
-    }
+
     res.render('post', {
       title: post.title,
       content: post.content
-    })
-  })
+    });
+  });
 
 });
 
