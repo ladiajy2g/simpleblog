@@ -18,15 +18,5 @@
   },
   "engines": {
     "node": "12.19.0"
-  },
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ladiajy2g/simpleblog.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ladiajy2g/simpleblog/issues"
-  },
-  "homepage": "https://github.com/ladiajy2g/simpleblog#readme",
-  "description": ""
+  }
 }
